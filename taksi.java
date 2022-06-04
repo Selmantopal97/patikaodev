@@ -11,11 +11,6 @@ public static void main(String[] args) {
     taksimetre+=(km*perKm);
     taksimetre=(taksimetre<20) ? 20 : taksimetre;
     System.out.print(taksimetre);
-
-
-    
-
-    
 }
     
 }
