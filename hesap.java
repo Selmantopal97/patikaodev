@@ -11,25 +11,25 @@ public class hesap {
         n2= input.nextInt();
         
         System.out.print("1-Toplama\n2-Çıkarma\n3-Çarpma\n4-Bölme\n");
-        System.out.print("Seçiminiz: ");
+        System.out.println("Seçiminiz: ");
         select= input.nextInt();
 
-        if(select==1){
-             System.out.print("Toplam:" +(n1+n2));
-        }
-            else if(select==2){
+        switch(select){
+            case 1:
+            System.out.print("Toplam:" +(n1+n2));
+            break;
+            case 2:
             System.out.print("Fark:" +(n1-n2));
-            }
-            else if(select==3){
-                System.out.print("Çarpım:" +(n1*n2));
-                }
-            else if(select==4){
-                    System.out.print("Bölüm:" +(n1/n2));
-                    }
-            else{
+            break;
+            case 3:
+            System.out.print("Çarpım:" +(n1*n2));
+            break;
+            case 4:
+            System.out.print("Bölüm:" +(n1/n2));
+            break;
+            default :
             System.out.print("Yanlış seçim yaptınız");
-            }
         }
     }
     
-
+}
